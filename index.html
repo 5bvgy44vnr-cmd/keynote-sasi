@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Class of 2026 Keynote</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,500..800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+/* VOICE occasion: a graduation keynote, warm, formal, spacious
+   IDEA an architect's drawing sheet: cobalt blueprint field, fine linework, a φ grid, title block in a margin rail
+   PICTURE a golden-rectangle subdivision with its spiral rising off a hatched foundation; the eye marks "the beginning"
+   COLOUR cobalt blueprint ground, white paper, graphite ink, one vermilion accent for the moments that turn the story
+   TYPE Archivo (narrow, architectural lettering) for headings + Newsreader for the spoken text; scale 13.6 / 17 / 27.5 / 44.5 / 72 (φ steps)
+   LAYOUT hero 38.2 : 61.8 title / drawing; sections are rail 38.2 : text 61.8; phone stacks title, picture, text */
+:root{color-scheme:light dark;--bg:light-dark(#ffffff,#0d0f14);--ink:light-dark(#15171c,#e9eaef);--mut:light-dark(#596070,#9ba2b1);--rule:light-dark(#e2e5ec,#252a35);--blue:light-dark(#1b44c2,#142f86);--blueink:light-dark(#1b44c2,#8fa9ff);--tint:light-dark(#eef2fd,#141a2b);--acc:light-dark(#e0402a,#ff6b55)}
+:root[data-theme=light]{color-scheme:light}
+:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html{scroll-padding-top:72px;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.62 Newsreader,Georgia,"Times New Roman",serif;overflow-x:clip;text-rendering:optimizeLegibility}
+h1,h2,h3,.lab,.toc,.cap,.num{font-family:Archivo,"Arial Narrow",Arial,sans-serif;font-stretch:82%}
+.band{padding-block:clamp(28px,4vw,64px);padding-left:max(5vw,16px);padding-right:max(5vw,16px)}
+.wrap{max-width:1240px;margin:0 auto}
+.hero{background:var(--blue);color:#fff}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.618fr);gap:clamp(24px,4vw,56px);align-items:end}
+.hero h1{font-size:clamp(40px,5.6vw,72px);line-height:1.02;letter-spacing:-.02em;font-weight:750;margin:0 0 26px;text-wrap:balance}
+.hero p{margin:0;font-size:17px;color:#dfe6ff;max-width:34ch}
+.hero .who{margin-top:26px;padding-top:16px;border-top:1px solid rgba(255,255,255,.35);font-family:Archivo,Arial,sans-serif;font-stretch:90%;font-size:15px;line-height:1.45;color:#fff}
+.hero .who span{display:block;color:#c9d4ff}
+.hfig{position:relative;aspect-ratio:1000/700}
+.hfig svg{position:absolute;inset:0;width:100%;height:100%}
+.eye{transform-origin:730px 430px;animation:pulse 3.2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.55;transform:scale(1.6)}}
+@media(prefers-reduced-motion:reduce){.eye{animation:none}html{scroll-behavior:auto}}
+.tocbar{border-bottom:1px solid var(--rule);background:var(--bg);padding-left:max(5vw,16px);padding-right:max(5vw,16px)}
+.toc{max-width:1240px;margin:0 auto;display:flex;gap:28px;overflow-x:auto;font-size:15px;font-weight:600}
+.toc a{flex:none;color:var(--mut);text-decoration:none;padding:16px 0;border-bottom:2px solid transparent}
+.toc a:hover,.toc a:focus-visible{color:var(--ink);border-color:var(--blueink);outline:none}
+@media(min-width:900px){.tocbar{position:sticky;top:0;z-index:5}}
+.sec{border-bottom:1px solid var(--rule)}
+.sec .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.618fr);gap:clamp(28px,5vw,80px)}
+.rail>div{position:sticky;top:88px}
+.lab{font-size:14px;font-weight:600;color:var(--blueink);margin:0 0 8px}
+h2{font-size:clamp(32px,3.6vw,44.5px);line-height:1.05;letter-spacing:-.02em;font-weight:750;margin:0 0 28px;text-wrap:balance}
+.txt{max-width:64ch}
+.txt p{margin:0 0 1.1em}
+.txt .open{font-size:27.5px;line-height:1.3;margin-bottom:.7em}
+.pull{font-size:clamp(23px,2.4vw,27.5px)!important;line-height:1.3!important;color:var(--blueink);margin:1.3em 0!important;text-wrap:balance}
+.pull.big{font-size:clamp(28px,3.2vw,44.5px)!important;line-height:1.12!important;font-family:Archivo,Arial,sans-serif;font-stretch:82%;font-weight:700;letter-spacing:-.02em;color:var(--ink)}
+.turn{color:var(--acc)!important}
+.cap{font-size:14px;color:var(--mut);line-height:1.4}
+.card{background:var(--tint);border-radius:4px;padding:22px}
+.card h3{font-size:18px;margin:0 0 10px;font-weight:700}
+.card ul{margin:0;padding:0;list-style:none}
+.card li{padding:7px 0;border-top:1px solid var(--rule);font-size:16px;line-height:1.4}
+.card li:first-child{border-top:0}
+.pair{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.618fr);gap:12px}
+.pair .then{background:transparent;border:1px solid var(--rule)}
+.num{font-weight:750;letter-spacing:-.02em;line-height:1;white-space:nowrap}
+.units{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:6px;margin:18px 0 14px}
+.units svg{width:100%;height:auto;display:block}
+.stat .num{font-size:72px;color:var(--acc)}
+.tl{list-style:none;margin:0;padding:0;border-left:2px solid var(--blueink)}
+.tl li{position:relative;padding:0 0 18px 20px}
+.tl li::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--blueink)}
+.tl li.x::before{background:var(--acc);border-color:var(--acc)}
+.tl b{display:block;font-family:Archivo,Arial,sans-serif;font-stretch:85%;font-size:15px;color:var(--blueink);white-space:nowrap}
+.tl li.x b{color:var(--acc)}
+.tl span{font-size:16px;line-height:1.4;display:block}
+.bldg{margin:1.4em 0 1.6em;border:1px solid var(--rule);border-radius:4px;padding:20px}
+.floor{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.3fr);gap:18px;align-items:center}
+.blk{border:1.5px solid var(--blueink);border-bottom:0}
+.floor:last-child .blk{border-bottom:1.5px solid var(--blueink)}
+.f3 .blk{height:190px;background:var(--blue)}
+.f2 .blk{height:78px;background:repeating-linear-gradient(90deg,transparent 0 22px,var(--blueink) 22px 25px);opacity:.75}
+.f1 .blk{height:48px;background:repeating-linear-gradient(135deg,transparent 0 7px,var(--blueink) 7px 8.5px)}
+.floor .num{font-size:clamp(26px,3vw,36px);color:var(--blueink);display:block;margin-bottom:4px}
+.floor p{margin:0!important;font-size:16px;line-height:1.35}
+.fox svg{width:100%;height:auto;display:block}
+.cast{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 18px;margin:14px 0 0;padding:0}
+.cast div{border-top:1px solid var(--rule);padding:9px 0}
+.cast dt{font-family:Archivo,Arial,sans-serif;font-stretch:85%;font-weight:700;font-size:15px}
+.cast dd{margin:0;font-size:16px;color:var(--mut)}
+.thx{list-style:none;margin:0;padding:0;font-family:Archivo,Arial,sans-serif;font-stretch:85%;font-size:27.5px;font-weight:650;line-height:1.35}
+.thx li{border-top:1px solid var(--rule);padding:6px 0}
+.vs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.vs .card .num{font-size:30px;display:block;margin-bottom:6px}
+.vs .in{background:var(--blue);color:#fff}
+.vs .in .cap{color:#d6deff}
+.three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:1.4em 0}
+.three a{display:block;text-decoration:none;color:var(--ink);border-top:2px solid var(--blueink);padding:12px 0 0;font-family:Archivo,Arial,sans-serif;font-stretch:85%;font-weight:700;font-size:19px;line-height:1.2}
+.three a small{display:block;font-weight:500;font-size:14px;color:var(--mut);margin-bottom:4px}
+.three a:hover,.three a:focus-visible{color:var(--blueink);outline:none}
+.coda{background:var(--blue);color:#fff}
+.coda .wrap{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(20px,3vw,48px)}
+.coda p{margin:0;font-family:Archivo,Arial,sans-serif;font-stretch:82%;font-weight:750;font-size:clamp(28px,3.2vw,44.5px);line-height:1.08;letter-spacing:-.02em;text-wrap:balance}
+.coda p span{display:block;font-weight:500;color:#c9d4ff}
+.end .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.618fr);gap:clamp(28px,5vw,80px)}
+.end .txt p{font-size:27.5px;line-height:1.3}
+.sign{font-family:Archivo,Arial,sans-serif;font-stretch:90%;font-size:15px;color:var(--mut);border-top:1px solid var(--rule);padding-top:14px;margin-top:30px}
+.sign b{display:block;color:var(--ink);font-size:17px}
+@media(max-width:900px){.sec .wrap,.end .wrap{grid-template-columns:minmax(0,1fr);gap:20px}.rail>div{position:static}.coda .wrap{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:720px){.hero .wrap{grid-template-columns:minmax(0,1fr);align-items:start}.hfig{order:2}}
+@media(max-width:600px){.three{grid-template-columns:minmax(0,1fr)}.pair,.vs{grid-template-columns:minmax(0,1fr)}.floor{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:12px}.f3 .blk{height:150px}.stat .num{font-size:56px}.txt .open,.end .txt p{font-size:23px}.thx{font-size:23px}}
+</style>
+</head>
+<body>
+
+<header class="band hero">
+  <div class="wrap">
+    <div>
+      <h1>Design your path. Embrace change. Define success.</h1>
+      <p>A graduation address to the Class of 2026.</p>
+      <div class="who">Pramod N. Medichalam<span>Chief Guest and Keynote Speaker</span></div>
+    </div>
+    <div class="hfig" aria-hidden="true">
+      <svg viewBox="0 0 1000 700" preserveAspectRatio="xMidYMid meet">
+        <defs>
+          <pattern id="hatch" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="12" stroke="#fff" stroke-width="1.6" stroke-opacity=".55"/></pattern>
+        </defs>
+        <g fill="none" stroke="#fff" stroke-opacity=".32" stroke-width="1.2">
+          <rect x="1" y="1" width="998" height="617"/>
+          <line x1="618" y1="0" x2="618" y2="618"/>
+          <line x1="618" y1="382" x2="1000" y2="382"/>
+          <line x1="764" y1="382" x2="764" y2="618"/>
+          <line x1="618" y1="472" x2="764" y2="472"/>
+          <line x1="708" y1="382" x2="708" y2="472"/>
+          <line x1="708" y1="438" x2="764" y2="438"/>
+          <line x1="0" y1="0" x2="618" y2="618" stroke-dasharray="4 8"/>
+        </g>
+        <path d="M0,618 A618,618 0 0 1 618,0 A382,382 0 0 1 1000,382 A236,236 0 0 1 764,618 A146,146 0 0 1 618,472 A90,90 0 0 1 708,382 A56,56 0 0 1 764,438" fill="none" stroke="#fff" stroke-width="3"/>
+        <g fill="#fff">
+          <rect x="70" y="580" width="80" height="38" opacity=".9"/>
+          <rect x="190" y="548" width="80" height="70" opacity=".9"/>
+          <rect x="310" y="506" width="80" height="112" opacity=".9"/>
+          <rect x="430" y="452" width="80" height="166" opacity=".9"/>
+        </g>
+        <rect x="0" y="618" width="1000" height="82" fill="url(#hatch)"/>
+        <line x1="0" y1="618" x2="1000" y2="618" stroke="#fff" stroke-width="3"/>
+        <circle class="eye" cx="730" cy="430" r="9" fill="#ff6b55"/>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<div class="tocbar"><nav class="toc" aria-label="Sections">
+  <a href="#opening">Opening</a><a href="#moment">A new beginning</a><a href="#path">Designing your path</a><a href="#change">Embracing change</a><a href="#success">Defining success</a><a href="#closing">Closing</a>
+</nav></div>
+
+<section class="band sec" id="opening">
+  <div class="wrap">
+    <aside class="rail"><div>
+      <p class="lab">Opening</p>
+      <h2>No one reaches a day like this alone</h2>
+      <p class="cap" style="margin:0 0 10px">With gratitude to</p>
+      <ul class="thx"><li>Parents</li><li>Families</li><li>Friends</li><li>Teachers</li><li>Seniors</li><li>Juniors</li></ul>
+    </div></aside>
+    <div class="txt">
+      <p class="open">Good morning everyone,</p>
+      <p>Distinguished members of the management, respected faculty, proud parents and families, and most importantly — the graduating class of 2026 — my heartfelt congratulations to all of you.</p>
+      <p>It is truly an honor to be here with you today.</p>
+      <p class="pull big">Today is not just a ceremony. It is a moment.</p>
+      <p>A moment that holds years of effort — sleepless nights, deadlines, doubts, revisions… and those quiet moments when something finally worked, and you felt it.</p>
+      <p>And before we go any further, I think it is important to pause and acknowledge the people who made this journey possible — your parents, your families, your friends, your teachers, your seniors, your juniors.</p>
+      <p class="pull">Because no one reaches a day like this alone.</p>
+      <p>And to all of you graduating today — you should be deeply proud.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band sec" id="moment">
+  <div class="wrap">
+    <aside class="rail"><div>
+      <p class="lab">A new beginning</p>
+      <h2>Architecture is no longer just about buildings</h2>
+      <div class="pair">
+        <div class="card then"><h3>1999</h3><ul><li>A much narrower field</li><li>Fewer paths</li><li>Limited opportunities</li></ul></div>
+        <div class="card"><h3>Today</h3><ul><li>Sustainability, human experience, social responsibility</li><li>Smart, technology-driven, data-informed</li><li>Technology, environment and social sciences together</li><li>Holistic, adaptive, future-ready environments</li></ul></div>
+      </div>
+    </div></aside>
+    <div class="txt">
+      <p>You are stepping into the world at a very interesting time.</p>
+      <p>When I graduated in 1999, architecture was a much narrower field. The paths were fewer, the opportunities were limited.</p>
+      <p>Today, it has transformed.</p>
+      <p class="pull big">Architecture is no longer just about buildings.</p>
+      <p>It is now creating meaningful impact through sustainability, human experience, and social responsibility. It has evolved from static, standalone design to smart, technology-driven, and data-informed solutions. The profession is now highly interdisciplinary, integrating insights from technology, environment, and social sciences. Overall, architecture has moved from simply constructing buildings to shaping holistic, adaptive, and future-ready environments.</p>
+      <p>And that makes this an incredibly exciting time to begin.<br>But at the same time… it can also feel overwhelming.</p>
+      <p>Because this moment is not just about finishing something.<br>It is about beginning something new… especially without a clear map.</p>
+      <p>And if you are feeling uncertain right now — that is completely okay.<br>In fact, it is a very honest place to be.</p>
+      <p class="pull">Today, I want to share three important experiences with you.</p>
+      <p>Not as instructions.<br>But as reflections from my own journey — things I understood slowly, sometimes the hard way.</p>
+      <nav class="three" aria-label="The three experiences">
+        <a href="#path"><small>First</small>Designing your path forward</a>
+        <a href="#change"><small>Second</small>Embracing change</a>
+        <a href="#success"><small>Third</small>Defining success</a>
+      </nav>
+    </div>
+  </div>
+</section>
+
+<section class="band sec" id="path">
+  <div class="wrap">
+    <aside class="rail"><div>
+      <p class="lab">First experience</p>
+      <h2>Designing your path forward</h2>
+      <div class="card stat">
+        <span class="num">1–2 of 10</span>
+        <div class="units" id="units"></div>
+        <p class="cap" style="margin:0">In India, only about 1 to 2 out of 10 graduates actually continue in the exact field they studied.</p>
+      </div>
+    </div></aside>
+    <div class="txt">
+      <p>Over the last five years, you have learned how to design.<br>But more importantly, you have learned how to think.</p>
+      <p>How to observe.<br>How to question.<br>How to approach problems with both logic and empathy.</p>
+      <p>And that is something that will stay with you — no matter where you go.</p>
+      <p>When I chose architecture, my decision was quite simple.<br>I heard it involved art and design, and the career later is all colorful… and that was enough for me.<br>I followed that instinct without really thinking too far ahead.<br>And honestly, I had a wonderful time.</p>
+      <p>But as I moved closer to graduation, I began to notice something that unsettled me.<br>Some of the seniors I admired most… were moving away from architecture.</p>
+      <p>And that created doubt.<br>It made me wonder — then what is the right path?</p>
+      <p>And I know many of you might be feeling something similar today.<br>That quiet question in your mind:</p>
+      <p class="pull">“Am I doing the right thing?”</p>
+      <p>Let me tell you something that took me time to understand—<br>You don’t have to have everything figured out right now.<br>And more importantly…</p>
+      <p class="pull big">It is never too late to change direction.</p>
+      <p>Because what architecture has given you is not just a profession.<br>It has given you a way of thinking.<br>And that has value everywhere.</p>
+      <p>And here’s something worth reflecting on—<br>In India, only about 1 to 2 out of 10 graduates actually continue in the exact field they studied.</p>
+      <p>Most people evolve.<br>They shift.<br>They discover something new about themselves along the way.</p>
+      <p>So if you are uncertain today…<br>You are not lost.</p>
+      <p class="pull">You are just at the beginning of discovery.</p>
+      <p>I remember something very clearly from my fourth year.<br>That day, on the sofa in my living room, I was watching television, and I saw the Sony TV Entertainment channel identity.<br>And for some reason, I was completely drawn to it.<br>It felt different.<br>It felt alive.</p>
+      <p>And for the first time, I found myself thinking—<br><em>“What if I could do something like this?”</em></p>
+      <p>And almost immediately, I dismissed it.<br>I told myself — this is not your field.<br>You don’t know the tools, the technology, the process.<br>So I let that thought go.</p>
+      <p>But looking back…<br>That curiosity stayed.<br>And I’ve realized something since then—<br>The things that genuinely excite you…<br>They don’t come without a reason.</p>
+      <p class="pull">So don’t ignore them too quickly.</p>
+      <p>That curiosity eventually led me to make a decision. A decision for a change in my career.<br>That brings to my second topic of gyan bhodhan on how to Handle Change.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band sec" id="change">
+  <div class="wrap">
+    <aside class="rail"><div>
+      <p class="lab">Second experience</p>
+      <h2>Embracing change</h2>
+      <ol class="tl">
+        <li><b>1999</b><span>Graduates in architecture, then about a year of work</span></li>
+        <li><b>Savannah</b><span>MFA at the Savannah College of Art &amp; Design. Three gold medals.</span></li>
+        <li><b>2003</b><span>A major US recession. 25 to 30 applications, mostly in Los Angeles and Hollywood.</span></li>
+        <li><b>New York City</b><span>Liquid Light Inc., Manhattan. Hired as a Broadcast Designer, two levels above a recent graduate.</span></li>
+        <li class="x"><b>11 months later</b><span>The company shuts down. No warning.</span></li>
+      </ol>
+    </div></aside>
+    <div class="txt">
+      <p>After architecture, and after working for about a year, I chose to explore motion design further.<br>I went on to pursue my Master’s in Fine Arts at the Savannah College of Art &amp; Design (SCAD) in the United States.</p>
+      <p>Those were intense years.<br>I worked hard. I pushed myself.<br>And I graduated with three gold medals.</p>
+      <p>At that point, I felt ready.<br>I thought — now things will fall into place.</p>
+      <p>But before I go further, let me pause here and ask you something.<br>If you really think about it—<br>What is the percentage of the overall knowledge that comes from your college education?</p>
+      <div class="bldg" role="figure" aria-label="Where knowledge comes from, drawn as a building">
+        <p class="cap" style="margin:0 0 14px!important">Roughly speaking, where knowledge comes from</p>
+        <div class="floor f3"><div class="blk"></div><div><span class="num">60–70%</span><p>Real-world experience</p></div></div>
+        <div class="floor f2"><div class="blk"></div><div><span class="num">20–30%</span><p>People, networks and social connections</p></div></div>
+        <div class="floor f1"><div class="blk"></div><div><span class="num">10–20%</span><p>College education: the foundation</p></div></div>
+      </div>
+      <p>Now when you hear this…<br>Some of you might think—<br><em>“Then why did I spend five years in college?”</em></p>
+      <p>But here’s how I look at it.<br>What you have learned here… is not small.<br>It is your foundation.<br>And in architecture, we all understand this better than anyone—</p>
+      <p class="pull big">A building is only as strong as its foundation.</p>
+      <p>These five years of education.<br>They have built your way of thinking.<br>They have shaped your discipline.<br>They have trained your eye, your patience, your ability to solve problems.<br>That is not replaceable.</p>
+      <p>And now—<br>You are stepping onto the next level.<br>The next set of stepping stones in your journey.</p>
+      <p>Whether you choose higher studies… or step into the professional world…<br>Find places that help you build further on this foundation.<br>Choose environments that align with your purpose.<br>Go where your curiosity is challenged.<br>Go where your learning continues.<br>Not just where things are comfortable.</p>
+      <p>This is also a very unique phase of your life.<br>You have the freedom to experiment.<br>You have the space to take risks.<br>You don’t yet have the weight of long-term obligations.<br>So use this time wisely.</p>
+      <p>Reinforce your foundation.<br>Start shaping your career — not just strongly, but meaningfully.</p>
+      <p>And through all of this…<br>Trust your instincts.<br>Believe in your intuition.<br>Because more often than not…<br>That inner voice knows the direction… even when the path is not clear.</p>
+      <p>But life had a different plan.<br>In 2003, the US went through a major recession.<br>Opportunities became scarce.<br>For international students, it was even more challenging.<br>I applied to over 25 to 30 different companies.<br>Most of them in Los Angeles and Hollywood, which was the industry hub.<br>Surprisingly, the opportunity that came through…<br>Was in New York City.</p>
+      <p>I joined a design studio called Liquid Light Inc. in Manhattan.<br>And I still remember that moment.<br>I wasn’t hired as a fresh college graduate nor as a junior designer.<br>I was brought in as a Broadcast Designer. Two levels above for any recent college graduate.<br>It felt like everything had aligned.<br>Like this was the moment I had been working towards.</p>
+      <p>I began working closely with the Creative Director — Kieran Walsh.<br>And very quickly, I experienced something important.<br>I realized how much I still had to learn.<br>The way he thought, the way he approached design, the clarity he brought into every decision — it was humbling.<br>And at the same time, incredibly inspiring.<br>I felt like I was exactly where I needed to be.</p>
+      <p>And then…</p>
+      <p class="pull big turn">11 months later… the company shut down.</p>
+      <p>No warning.<br>No preparation.<br>Just like that — everything changed.</p>
+      <p>And in that moment, I understood something I had never fully understood before—</p>
+      <p class="pull">We don’t grow when things go according to plan.<br>We grow when they don’t.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band sec" id="success">
+  <div class="wrap">
+    <aside class="rail"><div>
+      <p class="lab">Third experience</p>
+      <h2>Defining success</h2>
+      <div class="card fox">
+        <svg viewBox="0 0 600 330" role="img" aria-label="The fox jumps again and again; on the last try a breeze lowers the grapes within reach">
+          <line x1="0" y1="300" x2="600" y2="300" stroke="currentColor" stroke-width="2"/>
+          <line x1="0" y1="150" x2="600" y2="150" stroke="currentColor" stroke-opacity=".35" stroke-dasharray="6 6"/>
+          <path d="M0,22 H600" stroke="currentColor" stroke-width="2" stroke-opacity=".6"/>
+          <line x1="470" y1="22" x2="470" y2="62" stroke="currentColor" stroke-width="2"/>
+          <g fill="none" stroke="var(--blueink)" stroke-width="2.4" stroke-opacity=".55">
+            <path d="M70,292 Q170,170 270,292"/>
+            <path d="M70,292 Q190,120 310,292"/>
+            <path d="M70,292 Q210,70 350,292"/>
+            <path d="M70,292 Q230,30 390,292"/>
+          </g>
+          <path d="M0,110 C140,60 300,150 520,100" fill="none" stroke="var(--acc)" stroke-width="2.4" stroke-dasharray="10 7"/>
+          <line x1="470" y1="22" x2="470" y2="108" stroke="var(--acc)" stroke-width="2" stroke-dasharray="3 4"/>
+          <path d="M70,292 Q270,-20 470,292" fill="none" stroke="var(--acc)" stroke-width="3.4"/>
+          <g fill="var(--blueink)" opacity=".28"><circle cx="462" cy="70" r="9"/><circle cx="478" cy="70" r="9"/><circle cx="470" cy="84" r="9"/></g>
+          <g fill="var(--blueink)"><circle cx="461" cy="118" r="10"/><circle cx="479" cy="118" r="10"/><circle cx="470" cy="134" r="10"/><circle cx="452" cy="134" r="9"/><circle cx="488" cy="134" r="9"/><circle cx="470" cy="150" r="9"/></g>
+          <g fill="var(--acc)"><path d="M40,300 L44,272 Q60,258 82,266 L96,254 L100,270 L108,276 L96,284 L92,300 Z"/><path d="M40,286 Q14,282 8,296 L40,298 Z"/></g>
+        </svg>
+        <dl class="cast">
+          <div><dt>The fox</dt><dd>You</dd></div>
+          <div><dt>The grapes</dt><dd>Opportunity</dd></div>
+          <div><dt>The jumps</dt><dd>Your efforts</dd></div>
+          <div><dt>The breeze</dt><dd>What we call luck</dd></div>
+        </dl>
+        <p class="cap" style="margin:12px 0 0">Dashed line: the fox’s maximum capability.</p>
+      </div>
+    </div></aside>
+    <div class="txt">
+      <p>That phase of my life slowly reshaped how I think about success.<br>Because success is not something you chase in a straight line.<br>It is something you discover… through movement.</p>
+      <p>Let me share a simple story.<br>The story of the fox and the grapes.</p>
+      <p>A fox sees grapes hanging just out of reach.<br>It jumps.<br>It tries again.<br>And again.<br>It reaches its maximum capability…<br>And still cannot get them.<br>And eventually, it stops.<br>And tells itself — the grapes are probably not worth it.</p>
+      <p>Now imagine this—<br>The fox is you.<br>The grapes are opportunity.<br>And the jumps… are your efforts.</p>
+      <p>Now imagine something else.<br>A small breeze.<br>A wind.</p>
+      <p>If the fox had tried just one more time…<br>At the exact moment that breeze lowered the grapes slightly…<br>It would have reached them.</p>
+      <p>That breeze…<br>Is what we call luck.</p>
+      <p>Luck is not something that appears out of nowhere.</p>
+      <p class="pull">Luck meets you… only when you are still trying.</p>
+      <p>So my friends—</p>
+      <p class="pull big turn">Keep jumping.</p>
+      <p>Because you never know which one effort… will connect you to something bigger.</p>
+      <p>And this is something I often relate to Virender Sehwag.<br>Sehwag did not wait for the perfect moment.<br>He didn’t play safe.<br>Whether it was a Test match or a T20…<br>He played every ball with intent.<br>Confidence.<br>Freedom.</p>
+      <p>Did he fail sometimes?<br>Of course.<br>But that never stopped him from playing the next ball the same way.</p>
+      <p>And I think that is a powerful lesson.<br>Approach every opportunity fully.<br>Not because every opportunity will work.<br>But because that mindset keeps you alive in the game.</p>
+      <p>And yes…<br>You will make mistakes.<br>You will fail.</p>
+      <p>But here is something I strongly believe—</p>
+      <p class="pull">It is okay to make a mistake once.<br>But it is not okay to ignore what it was trying to teach you.</p>
+      <p>Growth is not about avoiding failure.<br>It is about becoming better because of it.</p>
+      <p>Stay open to feedback.<br>Learn continuously.<br>Build your skills not for display…<br>But for depth.</p>
+      <p>And most importantly—<br>Enjoy what you are doing.<br>Because this phase of your life…<br>Is not just about building a career.<br>It is about building yourself.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band sec" id="closing">
+  <div class="wrap">
+    <aside class="rail"><div>
+      <p class="lab">Closing</p>
+      <h2>Success is external. Happiness is internal.</h2>
+      <div class="vs">
+        <div class="card"><span class="num">Success</span><p class="cap" style="margin:0">External. What you achieve.</p></div>
+        <div class="card in"><span class="num">Happiness</span><p class="cap" style="margin:0">Internal. How you feel while achieving it.</p></div>
+      </div>
+    </div></aside>
+    <div class="txt">
+      <p>Before I conclude, I want to leave you with one final thought.</p>
+      <p>There is a difference between success and happiness.<br>Success is external.<br>Happiness is internal.<br>And the two don’t always go together.</p>
+      <p>That is why your priorities matter.<br>Because if your priorities are not aligned with what truly matters to you…<br>Even success can feel empty.</p>
+      <p>But when they are aligned…<br>Even small achievements feel meaningful.</p>
+      <p>And for me, that is what true success is—</p>
+      <p class="pull">Not just what you achieve.<br>But how you feel while achieving it.</p>
+      <p>So as you step into what comes next—<br>Take your time.<br>Stay open.<br>Stay curious.<br>Trust your journey.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band coda" aria-label="Three takeaways">
+  <div class="wrap">
+    <p>Design your path <span>with intention.</span></p>
+    <p>Embrace change <span>with courage.</span></p>
+    <p>Define success <span>in your own way.</span></p>
+  </div>
+</section>
+
+<section class="band end">
+  <div class="wrap">
+    <div></div>
+    <div class="txt">
+      <p>Congratulations once again, Class of 2026.</p>
+      <p>I wish you strength in uncertainty, clarity in confusion, and joy in everything you choose to pursue.</p>
+      <p>Thank you… and all the very best.</p>
+      <div class="sign"><b>Pramod N. Medichalam</b>Graduation keynote, Class of 2026</div>
+    </div>
+  </div>
+</section>
+
+<script>
+{
+  const u = document.getElementById('units');
+  const arch = (i) => {
+    const fill = i === 0 ? 'var(--acc)' : 'none';
+    const half = i === 1 ? '<rect x="0" y="30" width="40" height="30" fill="var(--acc)" opacity=".55" clip-path="url(#ac' + i + ')"/>' : '';
+    const stroke = i < 2 ? 'var(--acc)' : 'var(--mut)';
+    return '<svg viewBox="0 0 40 60" aria-hidden="true"><defs><clipPath id="ac' + i + '"><path d="M4,58 V20 A16,16 0 0 1 36,20 V58 Z"/></clipPath></defs>' +
+      '<path d="M4,58 V20 A16,16 0 0 1 36,20 V58 Z" fill="' + fill + '" stroke="' + stroke + '" stroke-width="2.5"/>' + half + '</svg>';
+  };
+  u.innerHTML = Array.from({length: 10}, (_, i) => arch(i)).join('');
+}
+</script>
+</body>
+</html>
